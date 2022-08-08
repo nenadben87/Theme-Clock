@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.6s ease;
+}
+
+body.dark {
+  background-color: #333;
+}
+
+.toggle-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.toggle {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.toggle.dark {
+  background-color: #fff;
+  color: #333;
+}
+
+.clock-container {
+  width: 450px;
+  height: 400px;
+  background-color: #DCF0E7;
+  border-radius: 5px;
+  margin-left: 32vw;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.center-point {
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.needle-hour {
+  width: 7px;
+  height: 100px;
+  background-color: #333;
+  position: absolute;
+  top: 26%;
+  left: 50.8%;
+  transform-origin: bottom right;
+  transform: rotate(0deg);
+}
+
+.needle-minute {
+  width: 5px;
+  height: 150px;
+  background-color: #333;
+  position: absolute;
+  top: 14%;
+  left: 50.9%;
+  transform-origin: bottom right;
+  transform: rotate(0deg);
+}
+
+.needle-second {
+  width: 2px;
+  height: 150px;
+  background-color: #b01224;
+  position: absolute;
+  top: 14%;
+  left: 50.9%;
+  transform-origin: bottom right;
+  transform: rotate(0deg);
+  
+}
+
+.time-and-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5vw;
+}
+
+.time {
+  font-size: 2.2rem;
+  color: #333;
+  margin-left: -2.5rem;
+}
+
+.time.dark {
+  color: #fff;
+}
+
+.date {
+  margin-left: 2.4rem;
+  font-size: 1.8rem;
+  color: #cbcacf
+}
+
+span {
+  background-color: #333;
+  color: #cbcacf;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+span.dark {
+  background-color: #fff;
+  color: #333;
+}
+
+@media(max-width: 2560px) {
+  .clock-container {
+    margin-left: 41vw;
+  }
+}
+
+@media(max-width: 1440px) {
+  .clock-container {
+    margin-left: 34vw;
+  }
+}
+
+@media(max-width: 1024px) {
+  .clock-container {
+    margin-left: 29vw;
+  }
+}
+
+@media(max-width: 912px) {
+  .clock-container {
+    margin-left: 26vw;
+  }
+}
+
+@media(max-width: 820px) {
+  .clock-container {
+    margin-left: 22vw;
+  }
+}
+
+@media(max-width: 820px) {
+  .clock-container {
+    margin-left: 21vw;
+  }
+}
+
+@media(max-width: 540px) {
+  .clock-container {
+    margin-left: 8vw;
+  }
+
+  .time-and-date {
+    margin-left: 4vw;
+  }
+}
+
+@media(max-width: 425px) {
+   .clock-container {
+    width: 400px;
+    margin-left: 3vw;
+   }
+
+   .time-and-date {
+    display: flex;
+    flex-direction: column;
+
+   }
+}
+
+@media(max-width: 414px) {
+  .clock-container {
+    margin-left: 2vw;
+    width: 400px;
+    height: 400px;
+  }
+
+  .time-and-date {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 412px) {
+  .clock-container {
+    margin-left: 1.5vw;
+  }
+}
+
+@media(max-width: 393px) {
+  .clock-container {
+    width: 382px;
+  }
+
+  .time-and-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media(max-width: 390px) {
+    .clock-container {
+      margin-left: 0.8vw;
+    }
+  }
+
+  @media(max-width: 375px) {
+    .clock-container {
+      width: 370px;
+    }
+  }
+
+  @media(max-width: 360px) {
+    .clock-container {
+      width: 355px;
+    }
+  }
+}
