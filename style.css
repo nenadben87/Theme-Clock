@@ -126,9 +126,21 @@ span.dark {
   color: #333;
 }
 
-@media(max-width: 2560px) {
+@media(min-width: 2560px){
+  html body .clock-container {
+    margin-left: 1070px;
+  }
+}
+
+@media(min-width: 1920px){
+  body .clock-container {
+    margin-left: 750px;
+  }
+}
+
+@media(min-width: 1536px){
   .clock-container {
-    margin-left: 41vw;
+    margin-left: 550px;
   }
 }
 
